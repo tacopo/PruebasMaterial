@@ -1,0 +1,15 @@
+<div class="cardContainer">
+    <mat-card *ngFor="let game of games">
+        <mat-card-header>
+            <mat-card-title>{{game.titulo}}</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <img mat-card-image src="{{game.portada}}"/> 
+        <mat-divider></mat-divider>
+        <mat-card-content>{{game.resumen}}</mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+            <a mat-raised-button color="accent" href="{{game.enlaceCompra}}" target="_blank"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart" ></mat-icon></a>
+        </mat-card-actions>
+    </mat-card>
+</div>
